@@ -1,0 +1,42 @@
+<div class="home d-flex align-items-center">
+  <div class="container-fluid">
+    <div class="row ps-lg-5">
+      <div class="col-lg-4 position-relative pic d-none d-lg-block"></div>
+      <div
+        class="col-lg-8 d-flex align-self-center flex-column flex-lg-row mb-5"
+      >
+        <img
+          class="img-fluid d-sm-block d-lg-none mobile-img"
+          src="/assets/pic/353868447_6180342998700400_7472827507306146142_n.jpg"
+          alt=""
+        />
+        <div class="content">
+          <h1 class="text-uppercase">
+            i'm Ahmed soliman.
+            <br />
+            <span>FRONTEND DEVELOPER </span>
+          </h1>
+          <p class="intro text-capitalize lh-lg">
+            I'm an egyptian front‑end developer focused on crafting clean &
+            user‑friendly experiences, I am passionate about building excellent
+            websites that improves the lives of those around me.
+          </p>
+          <p-button
+            (click)="showDialog()"
+            icon=" icon pi  pi-arrow-right"
+            label="More About Me"
+          ></p-button>
+          <p-dialog
+            [(visible)]="visible"
+            [modal]="true"
+            [style]="{ width: '50rem' }"
+            [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+          >
+            <app-about></app-about>
+          </p-dialog>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="color d-lg-block d-none"></div>
+</div>

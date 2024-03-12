@@ -1,0 +1,162 @@
+@import "primeicons/primeicons.css";
+.pic {
+  background-image: url(/assets/pic/353868447_6180342998700400_7472827507306146142_n.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: calc(100vh - 80px);
+  z-index: 11;
+  border-radius: 30px;
+  left: 40px;
+  top: 40px;
+  box-shadow: 0 0 7px var(--shading);
+}
+h1 {
+  font-size: 51px;
+  line-height: 62px;
+  font-weight: 700;
+  margin: 18px 0 10px;
+  position: relative;
+  padding-left: 70px;
+  color: var(--main-color);
+}
+h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 29px;
+  height: 4px;
+  width: 40px;
+  border-radius: 10px;
+  background-color: var(--main-color);
+}
+span {
+  color: var(--span-color);
+}
+.content {
+  max-width: 650px;
+  margin: 0 auto;
+}
+p {
+  color: var(--white);
+}
+.color {
+  background-color: var(--main-color);
+  position: fixed;
+  height: 200%;
+  width: 100%;
+  transform: rotate(-15deg);
+  left: -83%;
+  top: -50%;
+}
+.p-dialog-mask.p-component-overlay {
+  z-index: 13;
+}
+.p-button {
+  overflow: hidden;
+  display: inline-block;
+  line-height: 1.4;
+  border-radius: 35px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: all 0.25s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 1;
+  padding: 16px 70px 16px 35px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: transparent;
+  outline: none !important;
+  cursor: pointer !important;
+  border: 1px solid var(--main-color);
+}
+.icon {
+  background-color: var(--main-color);
+  position: absolute;
+  right: -8px;
+  top: -1px;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.p-button::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translate(100%);
+  transition: all 0.3s ease-out;
+}
+.p-button::before:hover {
+  background-color: var(--main-color);
+  transform: translate(0);
+}
+.p-button:hover {
+  background: #ffb400;
+}
+.p-dialog-draggable .p-dialog-header {
+  background-color: var(--background-color);
+}
+.p-dialog .p-dialog-content {
+  background-color: var(--background-color);
+}
+@media (max-width: 1024px) {
+  .content {
+    max-width: 450px;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 52px;
+    padding: 0;
+  }
+  h1::before {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .mobile-img {
+    border-radius: 50%;
+    width: 270px;
+    height: 270px;
+    border: 4px solid #ddd;
+    margin: 0 auto 25px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 48px;
+    margin: 29px 0 13px;
+    padding-left: 0;
+  }
+  h1::before {
+    display: none;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 475px;
+  }
+}
+@media (max-width: 767px) {
+  .intro {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

@@ -1,0 +1,552 @@
+<div class="row mb-5 temp">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_1.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 1</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp1()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-1-henna.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template 1
+        "
+          [(visible)]="visbleTemp1"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template One </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-1-henna.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-1-henna.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp1"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp1>
+                  <img
+                    class="slider-img"
+                    src="{{ temp1 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_6.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 2</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp2()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-2-one.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Two
+        "
+          [(visible)]="visbleTemp2"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Two </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-2-one.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-2-one.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp2"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp2>
+                  <img
+                    class="slider-img"
+                    src="{{ temp2 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_12.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 3</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp3()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-3"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-3-six.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Three
+        "
+          [(visible)]="visbleTemp3"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Three </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-3-six.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-3-six.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp3"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp3>
+                  <img
+                    class="slider-img"
+                    src="{{ temp3 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_15.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 4</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp4()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-4-nu.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Four
+        "
+          [(visible)]="visbleTemp4"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Four </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-4-nu.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-4-nu.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp4"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp4>
+                  <img
+                    class="slider-img"
+                    src="{{ temp4 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/bondi.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 5</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp5()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Bondi-01"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://bondi-01.vercel.app/#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Five
+        "
+          [(visible)]="visbleTemp5"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Five </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://bondi-01.vercel.app/#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://bondi-01.vercel.app/#</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp5"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp5>
+                  <img
+                    class="slider-img"
+                    src="{{ temp5 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+</div>

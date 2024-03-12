@@ -1,0 +1,151 @@
+<div class="contact">
+  <div
+    class="title text-uppercase text-start text-sm-center d-flex justify-content-start justify-content-lg-center justify-content-md-center align-items-center gap-4"
+  >
+    <h1>Get in</h1>
+    <span class="me">Touch</span>
+    <span class="title-bg">Contact</span>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4 contact-info">
+        <h3 class="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
+          don't be shy !
+        </h3>
+        <p class="mb-4 touch">
+          Feel free to get in touch with me. I am always open to discussing new
+          projects, creative ideas or opportunities to be part of your visions.
+        </p>
+        <p class="custom-span-contact position-relative">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <span class="text-uppercase d-block">adress point</span>
+          87 Al-Gazaer St. Al-Manshia, Alexandria, Egypt.
+        </p>
+        <p class="custom-span-contact position-relative">
+          <i class="fa-solid fa-envelope-open"></i>
+          <span class="text-uppercase d-block">MAil me</span>
+          ahmed.soliman.as13&#64;gmail.com
+        </p>
+        <p class="custom-span-contact position-relative">
+          <i class="fa-solid fa-phone"></i>
+          <span class="text-uppercase d-block">Call me</span> 01280499585
+        </p>
+        <ul class="social list-unstyled mb-5">
+          <li>
+            <a
+              href="https://www.facebook.com/damonisblack"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/Soly_001"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCBsfjMsA5AmryKNN3kPGnQg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ahmed-soliman-71aa35282/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/Soly01"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send/?phone=01148425342&text&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-lg-8">
+        <form [formGroup]="contact">
+          <div class="row">
+            <div class="col-12 col-md-6 mb-5">
+              <div class="form-group d-flex flex-column">
+                <input
+                  placeholder="Name"
+                  type="text"
+                  pInputText
+                  formControlName="name"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-6 mb-5">
+              <div class="form-group d-flex flex-column">
+                <input
+                  placeholder="Email"
+                  type="text"
+                  pInputText
+                  formControlName="email"
+                />
+              </div>
+            </div>
+            <div class="col-12 col-md-12 mb-5">
+              <div class="form-group d-flex flex-column">
+                <input
+                  placeholder="Subject"
+                  type="text"
+                  pInputText
+                  formControlName="subject"
+                />
+              </div>
+            </div>
+            <div class="col-12 mb-5">
+              <div class="form-group d-flex flex-column">
+                <textarea
+                  placeholder="Your Message"
+                  style="height: 200px"
+                  [autoResize]="false"
+                  rows="5"
+                  cols="40"
+                  pInputTextarea
+                  formControlName="message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="col-12 margin">
+              <p-button
+                icon=" icon fa-regular fa-paper-plane"
+                (click)="onSubmit()"
+                class="text-center mb-5"
+                label="Send Message"
+                severity="secondary"
+                [disabled]="contact.invalid"
+              ></p-button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

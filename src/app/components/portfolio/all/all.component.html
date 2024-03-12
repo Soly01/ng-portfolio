@@ -1,0 +1,1636 @@
+<div class="row mb-5 all">
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="assets/filter/e-commerce-definizione-cos-e.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">e-commerce</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogEcommerce()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/angular-ecommerce"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://angular-ecommerce-kb0cyg636-soly01.vercel.app/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="E-COMMERCE
+        "
+          [(visible)]="visibleEcommerce"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>E-COMMERCE </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold"
+                  >Html,Sass,Angular,PrimeNg,Bootstrap</span
+                >
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://angular-ecommerce-kb0cyg636-soly01.vercel.app/login"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://angular-ecommerce-kb0cyg636-soly01.vercel.app/login</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="images"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-image>
+                  <img
+                    class="slider-img"
+                    src="{{ image }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="assets/filter/6-data-analytics-business-intelligence-trends.webp"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Dash Board</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogdash()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/dash-board"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://dash-board-soly01.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Dash Board
+        "
+          [(visible)]="visibledash"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Dashboard </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold"
+                  >Html,Sass,Angular,PrimeNg,Bootstrap</span
+                >
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://dash-board-soly01.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://dash-board-soly01.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="pic"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-pic>
+                  <img
+                    class="slider-img"
+                    src="{{ pic }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="assets/filter/5-MIND-BLOWING-Portfolio-TIPS-Graphic-Design.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Portfolio</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogportfolio()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/My-portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://my-portfolio-soly01.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Portfolio
+        "
+          [(visible)]="visibleportfolio"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Personal Portfolio </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://my-portfolio-soly01.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://my-portfolio-soly01.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="portfolio"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-portfolio>
+                  <img
+                    class="slider-img"
+                    src="{{ portfolio }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/github-search-api-main.png"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Github API</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialoggit()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/GitHubAPI"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://git-hub-api-azure.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="GithubApi
+        "
+          [(visible)]="visiblegit"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>GitHubAPI </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://git-hub-api-azure.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://git-hub-api-azure.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="api"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-api>
+                  <img
+                    class="slider-img"
+                    src="{{ api }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img class="main-img" src="../../../../assets/filter/quiz.png" alt="" />
+        <h3 class="text-uppercase pt-4">Quiz App</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogQuiz()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://quizzz-78u04t1zx-soly01.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Quiz App
+        "
+          [(visible)]="visbleQuiz"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Quiz App </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://quizzz-78u04t1zx-soly01.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://quizzz-78u04t1zx-soly01.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="quiz"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-quiz>
+                  <img
+                    class="slider-img"
+                    src="{{ quiz }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/000c8aba-1200.webp"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Hangman Game</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialoghang()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/hang-man"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://hang-man-phi.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Hangman
+        "
+          [(visible)]="visbleHang"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Hangman Game </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://hang-man-phi.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://hang-man-phi.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="hang"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-hang>
+                  <img
+                    class="slider-img"
+                    src="{{ hang }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/speed.png"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Speed Game</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogSpeed()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Speed-Game"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://speed-game-iota.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Speed Game
+        "
+          [(visible)]="visbleSpeed"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Speed Game </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://speed-game-iota.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://speed-game-iota.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="speed"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-speed>
+                  <img
+                    class="slider-img"
+                    src="{{ speed }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/todo.webp"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">To-Do-List</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogtodo()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/to-do-list"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://to-do-list-soly01.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="To-Do-List
+        "
+          [(visible)]="visbleTodo"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>To-Do-List </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://to-do-list-soly01.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://to-do-list-soly01.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="todo"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-todo>
+                  <img
+                    class="slider-img"
+                    src="{{ todo }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/mental-illness-disorder-concept-head-profile-woman-from-puzzle-pieces-vector-illustration-flat_186332-1293.webp"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Memory Game</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogmemory()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/memory-game"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://memory-game-soly01.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Memory Game
+        "
+          [(visible)]="visbleMemory"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Memory Game </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://memory-game-soly01.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://memory-game-soly01.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="memory"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-memory>
+                  <img
+                    class="slider-img"
+                    src="{{ memory }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/flexslider-preview.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Images Slider</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogSlider()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Image-Slider"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://image-slider-soly01.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Images Slider
+        "
+          [(visible)]="visbleSlider"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Images Slider </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css,Javascript</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://image-slider-soly01.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://image-slider-soly01.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="slider"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-slider>
+                  <img
+                    class="slider-img"
+                    src="{{ slider }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_1.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 1</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp1()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-1-henna.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template 1
+        "
+          [(visible)]="visbleTemp1"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template One </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-1-henna.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-1-henna.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp1"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp1>
+                  <img
+                    class="slider-img"
+                    src="{{ temp1 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_6.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 2</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp2()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-2-one.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Two
+        "
+          [(visible)]="visbleTemp2"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Two </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-2-one.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-2-one.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp2"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp2>
+                  <img
+                    class="slider-img"
+                    src="{{ temp2 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_12.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 3</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp3()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-3"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-3-six.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Three
+        "
+          [(visible)]="visbleTemp3"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Three </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-3-six.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-3-six.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp3"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp3>
+                  <img
+                    class="slider-img"
+                    src="{{ temp3 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/Screenshot_15.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 4</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp4()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Template-4"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://template-4-nu.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Four
+        "
+          [(visible)]="visbleTemp4"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Four </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://template-4-nu.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://template-4-nu.vercel.app/</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp4"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp4>
+                  <img
+                    class="slider-img"
+                    src="{{ temp4 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+    <div class="box mb-4">
+      <div class="content angular d-flex justify-content-center img-fluid">
+        <img
+          class="main-img"
+          src="../../../../assets/filter/bondi.jpg"
+          alt=""
+        />
+        <h3 class="text-uppercase pt-4">Template 5</h3>
+        <ul class="d-flex fs-4">
+          <li
+            (click)="showDialogTemp5()"
+            class="d-flex flex-column align-items-center pointer"
+          >
+            <i class="fa-solid fa-circle-info"></i>
+            <span>info</span>
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-code"></i>
+            <a
+              href="https://github.com/Soly01/Bondi-01"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Code</a
+            >
+          </li>
+          <li class="d-flex pointer flex-column align-items-center">
+            <i class="fa-solid fa-eye"></i>
+            <a
+              href="https://bondi-01.vercel.app/#"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Live</a
+            >
+          </li>
+        </ul>
+        <p-dialog
+          header="Template Five
+        "
+          [(visible)]="visbleTemp5"
+          [breakpoints]="{ '960px': '75vw' }"
+          [style]="{ width: '80vw', height: '90vh' }"
+          [draggable]="false"
+          [resizable]="false"
+        >
+          <div class="box">
+            <div class="row info">
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-file-contract"></i>
+                Project
+                <span>Template Five </span>
+              </div>
+              <div class="col-12 col-sm-6 mb-2 text-center">
+                <i class="fa-solid fa-person"></i> Client
+                <span>Practicing </span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                  Tech:
+                </div>
+                <span class="text-uppercase fw-bold">Html,Css</span>
+              </div>
+              <div class="col-12 col-sm-12 mb-2 text-center">
+                <div>
+                  <i class="fa-solid fa-up-right-from-square"></i> Preview:
+                </div>
+                <a
+                  href="https://bondi-01.vercel.app/#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >https://bondi-01.vercel.app/#</a
+                >
+              </div>
+            </div>
+            <div class="row slider justify-content-center">
+              <p-galleria
+                class="w-75"
+                [autoPlay]="true"
+                [circular]="true"
+                [value]="temp5"
+                [numVisible]="5"
+                [circular]="true"
+                [showItemNavigators]="true"
+                [showThumbnails]="false"
+                [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '100%' }"
+              >
+                <ng-template pTemplate="item" let-temp5>
+                  <img
+                    class="slider-img"
+                    src="{{ temp5 }}"
+                    style="width: 100%; display: block"
+                  />
+                </ng-template>
+                <ng-template pTemplate="thumbnail" let-item>
+                  <div class="grid grid-nogutter justify-content-center">
+                    <img
+                      [src]="item.thumbnailImageSrc"
+                      style="display: block"
+                    />
+                  </div>
+                </ng-template>
+              </p-galleria>
+            </div>
+          </div>
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+</div>
