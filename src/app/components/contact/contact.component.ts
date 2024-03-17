@@ -10,6 +10,8 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InputTextModule } from 'primeng/inputtext';
 import { ContactService } from '../../../services/contact.service';
 import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-contact',
@@ -19,6 +21,7 @@ import { ButtonModule } from 'primeng/button';
     InputTextModule,
     InputTextareaModule,
     ButtonModule,
+    ToastModule,
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
@@ -31,13 +34,21 @@ export class ContactComponent {
     subject: new FormControl('', [Validators.required]),
     message: new FormControl('', [Validators.required]),
   });
-  constructor(private contactService: ContactService) {}
+  constructor(
+    private contactService: ContactService,
+    private messageService: MessageService
+  ) {}
   onSubmit() {
     const formData = this.contact.value;
     this.contactService.sendMessage(formData).subscribe({
       next: (res) => {
         console.log('Success', res);
         this.contact.reset();
+        this.messageService.add({
+          severity: 'success',
+          summary: 'Success',
+          detail: 'Message Sent Successfully',
+        });
       },
       error: (err) => {
         console.log('err', err);

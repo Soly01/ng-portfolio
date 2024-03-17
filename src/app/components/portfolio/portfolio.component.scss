@@ -58,6 +58,11 @@
     transform: translateY(0px);
   }
 }
+@media (max-width: 960px) {
+  .p-dialog {
+    height: 70vh !important;
+  }
+}
 @media (max-width: 767px) {
   .title-bg {
     font-size: 45px !important;
