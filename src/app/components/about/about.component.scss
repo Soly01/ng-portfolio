@@ -120,6 +120,10 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
+.p-dialog .p-dialog-header .p-dialog-header-icon:last-child {
+  padding: 7px !important;
+  color: var(--white);
+}
 .box1 {
   font-family: Open Sans, sans-serif;
   padding: 20px 30px 25px 40px;
